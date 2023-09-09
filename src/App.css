@@ -1,0 +1,8 @@
+.qrpage{
+  padding: 10px;
+}
+.qr-img{
+  border: 3px solid black;
+  height: 100%;
+  background-color: lightgray
+}
