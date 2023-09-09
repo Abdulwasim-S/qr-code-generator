@@ -51,7 +51,7 @@ function App() {
     <div className="App">
       <Header/>
       <div className='container mb-3'>
-        <div className='row'>
+        <div className='row '>
           <div className='col-md-6 text-start'>
             <lable>Enter the Data :</lable>
             <input className='form-control mb-3' type='text' placeholder='enter data...' onChange={(e)=>setValue(e.target.value)}/>
@@ -76,8 +76,8 @@ function App() {
               <label>Format :</label>
               <Select className='form-control' options={formatOptions} labelField="name" valueField="id" onChange={(values) => {setFormat(values[0].name)}} />
             </div>
-            <button className=' btn btn-primary mt-3 mb-2' onClick={()=>value?generate():alert("Enter Data")}>Generate</button>
-            <a className={' btn btn-success mb-2 '+(code===""?"disabled":"")} href={code} download={"QRCode."+format}>Download</a>
+            <button className=' btn btn-primary w-75 mx-5 mt-3 mb-2' onClick={()=>value?generate():alert("Enter Data")}>Generate</button>
+            <a className={' btn btn-success w-75 mx-5 mb-2 '+(code===""?"disabled":"")} href={code} download={"QRCode."+format}>Download</a>
           </div>
           </div>
           <div className='qrpage col-md-6 text-center'>
